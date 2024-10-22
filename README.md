@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ## Create a React Project: `npx create-react-app my-react-app`
+
+## Using Boxicons : `https://boxicons.com/`
