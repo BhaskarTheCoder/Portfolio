@@ -8,9 +8,6 @@
     align-items: center;
 
 }
-.button-flex svg{
-    
-}
 .home_social {
     display: grid;
     grid-template-columns: max-content;

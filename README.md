@@ -73,3 +73,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Create a React Project: `npx create-react-app my-react-app`
 
 ## Using Boxicons : `https://boxicons.com/`
+
+
+## Process for Hosting React in GitHub Pages:
+npm install gh-pages --save-dev
+
+
+## Paste in the package.json: by createa a keyvalue pair -
+homepage :"https://[github_username].github.io/[repository_name]"
+
+## Add this to the Scripts -
+"predeploy":"npm run build",
+"deploy":"gh-pages -d build",
+
