@@ -86,3 +86,13 @@ homepage :"https://[github_username].github.io/[repository_name]"
 "predeploy":"npm run build",
 "deploy":"gh-pages -d build",
 
+# Remove the local gh-pages branch
+git branch -D gh-pages
+# Remove the remote gh-pages branch
+git push origin --delete gh-pages
+# Clean the cache
+rm -rf node_modules/.cache/gh-pages
+# Install dependencies again
+npm install
+# Deploy
+npm run deploy
