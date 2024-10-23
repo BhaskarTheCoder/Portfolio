@@ -1,19 +1,31 @@
-import React from 'react'
+import React from "react";
 
 const Social = () => {
   return (
     <div className="home_social">
-        <a href="https://www.linkedin.com/in/udaybhaskarvalapadasu/" className="home_social-icon" target="_blank">
-            <i className="uil uil-instagram"></i>
-        </a>
-        <a href="https://github.com/BhaskarTheCoder" className="home_social-icon" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/udaybhaskarvalapadasu/"
+        className="home_social-icon"
+        target="_blank"
+      >
+        <i className="uil uil-instagram"></i>
+      </a>
+      <a
+        href="https://github.com/BhaskarTheCoder"
+        className="home_social-icon"
+        target="_blank"
+      >
         <i className="uil uil-linkedin"></i>
-        </a>
-        <a href="https://github.com/BhaskarTheCoder" className="home_social-icon" target="_blank">
+      </a>
+      <a
+        href="https://github.com/BhaskarTheCoder"
+        className="home_social-icon"
+        target="_blank"
+      >
         <i className="uil uil-github-alt"></i>
-        </a>
+      </a>
     </div>
-  )
-}
+  );
+};
 
 export default Social;

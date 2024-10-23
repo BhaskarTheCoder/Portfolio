@@ -3,8 +3,8 @@ import React from "react";
 import "./header.css";
 
 const Header = () => {
-    /*=============== Toggle Menu ===============*/
-    const[Toggle, showMenu] = useState(false);
+  /*=============== Toggle Menu ===============*/
+  const [Toggle, showMenu] = useState(false);
 
   return (
     <header className="header">
@@ -52,10 +52,13 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <i className="uil uil-times nav_close" onClick={() => showMenu(!Toggle)}></i>
+          <i
+            className="uil uil-times nav_close"
+            onClick={() => showMenu(!Toggle)}
+          ></i>
         </div>
         <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
-            <i class="uil uil-apps"></i>
+          <i class="uil uil-apps"></i>
         </div>
       </nav>
     </header>

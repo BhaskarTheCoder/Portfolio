@@ -96,3 +96,5 @@ rm -rf node_modules/.cache/gh-pages
 npm install
 # Deploy
 npm run deploy
+
+Tutorial Link: https://www.youtube.com/watch?v=7wzuievFjrk
