@@ -1,1 +1,690 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/Portfolio/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#0a0a0f"/><meta name="description" content="Uday Bhaskar Valapadasu - Full Stack Developer & SDET | Portfolio"/><meta name="keywords" content="Uday Bhaskar, Full Stack Developer, SDET, React, Portfolio"/><link rel="apple-touch-icon" href="/Portfolio/logo192.png"/><link rel="manifest" href="/Portfolio/manifest.json"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/><link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/><title>Uday Bhaskar | Portfolio</title><script defer="defer" src="/Portfolio/static/js/main.8f70d252.js"></script><link href="/Portfolio/static/css/main.e1586467.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#06060f" />
+  <title>Uday Bhaskar Valapadasu | AI Engineer</title>
+  <meta name="description" content="AI Engineer specializing in LLM fine-tuning, RAG systems, and production MLOps. MSCS – University of North Texas." />
+  <meta name="keywords" content="Uday Bhaskar Valapadasu, AI Engineer, LLM, RAG, LangChain, AWS, MLOps, Portfolio" />
+  <meta property="og:title" content="Uday Bhaskar Valapadasu | AI Engineer" />
+  <meta property="og:description" content="AI Engineer building production-grade LLM and RAG systems." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="logo192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo"><span class="nav__logo-mark">UBV</span></a>
+      <ul class="nav__links">
+        <li><a href="#about"      class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#skills"     class="nav__link">Skills</a></li>
+        <li><a href="#projects"   class="nav__link">Projects</a></li>
+        <li><a href="#contact"    class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__theme" data-theme-toggle aria-label="Toggle theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="assets/resume/UdayBhaskar_Resume.pdf" download class="btn btn--outline btn--sm nav__resume">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+        <button class="nav__hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav__mobile">
+  <a href="#about"      class="nav__link">About</a>
+  <a href="#experience" class="nav__link">Experience</a>
+  <a href="#skills"     class="nav__link">Skills</a>
+  <a href="#projects"   class="nav__link">Projects</a>
+  <a href="#contact"    class="nav__link">Contact</a>
+  <div class="nav__mobile-resume">
+    <a href="assets/resume/UdayBhaskar_Resume.pdf" download class="btn btn--primary" style="width:100%;justify-content:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Resume
+    </a>
+  </div>
+</div>
+
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<section id="home" class="hero">
+  <!-- Background elements -->
+  <div class="hero-bg">
+    <div class="hero-bg__orb hero-bg__orb--1"></div>
+    <div class="hero-bg__orb hero-bg__orb--2"></div>
+    <div class="hero-bg__orb hero-bg__orb--3"></div>
+  </div>
+  <div class="hero-grid"></div>
+
+  <div class="container" style="position:relative;z-index:1;width:100%">
+    <div class="hero__inner">
+
+      <!-- Left: Text -->
+      <div>
+        <div class="hero__available reveal">Open to Opportunities — Texas, USA</div>
+
+        <h1 class="hero__name reveal reveal-delay-1">
+          Uday Bhaskar<span class="hero__name-grad">Valapadasu</span>
+        </h1>
+
+        <p class="hero__title reveal reveal-delay-2">
+          AI Engineer
+          <span class="hero__sep"></span>
+          <span class="hero__typed" data-typed='["LLM Systems","RAG Architect","MLOps Engineer","Full-Stack Dev"]'>LLM Systems</span>
+          <span class="hero__sep"></span>
+          MSCS · UNT
+        </p>
+
+        <p class="hero__bio reveal reveal-delay-3">
+          Building <strong>production-grade AI systems</strong> that bridge research and real-world impact.
+          Specializing in <strong>transformer fine-tuning</strong>, <strong>hybrid RAG pipelines</strong>,
+          and <strong>end-to-end MLOps</strong> on AWS — with measurable results across banking,
+          cybersecurity, and accessibility domains.
+        </p>
+
+        <div class="hero__actions reveal reveal-delay-4">
+          <a href="#projects" class="btn btn--primary btn--lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            View My Work
+          </a>
+          <a href="assets/resume/UdayBhaskar_Resume.pdf" download class="btn btn--outline btn--lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Let's Talk</a>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div><div class="hero__stat-val">2+</div><div class="hero__stat-lbl">Years AI/ML</div></div>
+          <div><div class="hero__stat-val">0.90</div><div class="hero__stat-lbl">Model Accuracy</div></div>
+          <div><div class="hero__stat-val">22%</div><div class="hero__stat-lbl">CSAT Uplift</div></div>
+          <div><div class="hero__stat-val">100+</div><div class="hero__stat-lbl">HPO Experiments</div></div>
+        </div>
+      </div>
+
+      <!-- Right: Visual card stack -->
+      <div class="hero__visual reveal reveal-delay-3">
+
+        <!-- Current role card -->
+        <div class="hero__vis-card">
+          <div class="hero__vis-label">Current Role</div>
+          <div class="hero__current">
+            <div class="hero__current-dot"></div>
+            <div class="hero__current-text">
+              <strong>Applied AI Engineer</strong>
+              <span>Centific · Citizens Bank · Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Model performance card -->
+        <div class="hero__vis-card">
+          <div class="hero__vis-label">Model Performance</div>
+          <div class="hero__vis-row">
+            <span class="hero__vis-metric">Intent Detection (BERT)</span>
+            <span class="hero__vis-val" style="color:var(--g2)">90%</span>
+          </div>
+          <div class="hero__vis-bar"><div class="hero__vis-fill" style="width:90%"></div></div>
+          <div class="hero__vis-row" style="margin-top:.75rem">
+            <span class="hero__vis-metric">CSAT Score Uplift</span>
+            <span class="hero__vis-val" style="color:var(--b2)">+22%</span>
+          </div>
+          <div class="hero__vis-bar"><div class="hero__vis-fill" style="width:75%"></div></div>
+          <div class="hero__vis-row" style="margin-top:.75rem">
+            <span class="hero__vis-metric">Signal Quality</span>
+            <span class="hero__vis-val" style="color:var(--c2)">+27%</span>
+          </div>
+          <div class="hero__vis-bar"><div class="hero__vis-fill" style="width:82%"></div></div>
+        </div>
+
+        <!-- Tech stack card -->
+        <div class="hero__vis-card">
+          <div class="hero__vis-label">Core Stack</div>
+          <div class="hero__vis-stack">
+            <span class="hero__vis-tag">LangChain</span>
+            <span class="hero__vis-tag">PyTorch</span>
+            <span class="hero__vis-tag">LoRA / PEFT</span>
+            <span class="hero__vis-tag--b">AWS SageMaker</span>
+            <span class="hero__vis-tag--b">Lambda</span>
+            <span class="hero__vis-tag--c">Kafka</span>
+            <span class="hero__vis-tag--c">Pinecone</span>
+            <span class="hero__vis-tag--g">FastAPI</span>
+            <span class="hero__vis-tag--g">React</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ─────────────────────────────────────────────── -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row">
+    <div class="ticker__track">
+      <span class="ticker__item">Python</span><span class="ticker__item">LangChain</span>
+      <span class="ticker__item">PyTorch</span><span class="ticker__item">AWS SageMaker</span>
+      <span class="ticker__item">BERT · RoBERTa</span><span class="ticker__item">LoRA / PEFT</span>
+      <span class="ticker__item">FAISS</span><span class="ticker__item">Apache Kafka</span>
+      <span class="ticker__item">Docker · K8s</span><span class="ticker__item">PostgreSQL</span>
+      <span class="ticker__item">Redis</span><span class="ticker__item">Pinecone</span>
+      <span class="ticker__item">React · TypeScript</span><span class="ticker__item">FastAPI</span>
+      <span class="ticker__item">MLflow</span><span class="ticker__item">Optuna</span>
+    </div>
+  </div>
+  <div class="ticker__row">
+    <div class="ticker__track ticker__track--r">
+      <span class="ticker__item">Hugging Face</span><span class="ticker__item">LangGraph</span>
+      <span class="ticker__item">ChromaDB</span><span class="ticker__item">AWS Lambda</span>
+      <span class="ticker__item">Debezium</span><span class="ticker__item">PySpark</span>
+      <span class="ticker__item">spaCy</span><span class="ticker__item">TensorFlow</span>
+      <span class="ticker__item">Streamlit</span><span class="ticker__item">Scikit-learn</span>
+      <span class="ticker__item">Spring Boot</span><span class="ticker__item">Grafana</span>
+      <span class="ticker__item">GitLab CI/CD</span><span class="ticker__item">GitHub Actions</span>
+      <span class="ticker__item">SHAP · LIME</span><span class="ticker__item">SentenceTransformers</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<section id="about" class="section section--alt">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">About Me</div>
+      <h2 class="sh-title">Turning <span class="gt">Ideas into Intelligence</span></h2>
+      <p class="sh-desc">AI Engineer with a passion for building systems that are not just accurate — but production-ready and impactful.</p>
+    </div>
+
+    <div class="about__grid">
+      <div>
+        <p class="about__p reveal">
+          I'm an <strong>Applied AI Engineer</strong> currently at Centific, embedded with Citizens Bank,
+          where I design and deploy end-to-end ML pipelines — from data ingestion and feature engineering
+          to model fine-tuning, deployment, and real-time inference at scale.
+        </p>
+        <p class="about__p reveal">
+          My work spans the full AI lifecycle: ingesting millions of banking transaction logs,
+          fine-tuning <strong>BERT and RoBERTa</strong> on domain-specific datasets via AWS SageMaker,
+          running <strong>100+ Optuna hyperparameter experiments</strong>, and deploying conversational AI
+          via LangChain + AWS Lambda that drove a <strong>22% uplift in customer satisfaction</strong>.
+        </p>
+        <p class="about__p reveal">
+          Before AI, I built high-performance trading platforms at EPAM Systems using React, Spring Boot,
+          and Kafka — giving me rare full-stack depth to pair with ML expertise.
+          I hold an <strong>MSCS from the University of North Texas (Dec 2024)</strong>.
+        </p>
+
+        <div class="about__highlights">
+          <div class="about__hl reveal">
+            <div class="about__hl-icon ic-p">🧠</div>
+            <div>
+              <div class="about__hl-title">LLM &amp; RAG Systems</div>
+              <div class="about__hl-desc">Hybrid retrieval (FAISS + BM25 + ChromaDB), agentic LangGraph frameworks, multi-turn dialogue, Pinecone vector stores.</div>
+            </div>
+          </div>
+          <div class="about__hl reveal reveal-delay-1">
+            <div class="about__hl-icon ic-b">⚡</div>
+            <div>
+              <div class="about__hl-title">MLOps &amp; Cloud</div>
+              <div class="about__hl-desc">End-to-end on AWS — SageMaker, ECS Fargate, Lambda, Glue — with MLflow tracking and GitLab CI/CD automation.</div>
+            </div>
+          </div>
+          <div class="about__hl reveal reveal-delay-2">
+            <div class="about__hl-icon ic-c">🏗️</div>
+            <div>
+              <div class="about__hl-title">Data Engineering</div>
+              <div class="about__hl-desc">CDC pipelines with Kafka + Debezium, real-time streaming, SOC 2 and PCI DSS compliant PostgreSQL schemas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__sidebar">
+        <div class="glass acard reveal">
+          <h3>Quick Facts</h3>
+          <div class="acard-list">
+            <div class="acard-row"><span class="acard-label">📍 Location</span><span class="acard-val">Texas, USA</span></div>
+            <div class="acard-row"><span class="acard-label">🎓 Degree</span><span class="acard-val">MSCS · UNT 2024</span></div>
+            <div class="acard-row"><span class="acard-label">💼 Role</span><span class="acard-val">Applied AI Engineer</span></div>
+            <div class="acard-row"><span class="acard-label">🏢 Company</span><span class="acard-val">Centific</span></div>
+            <div class="acard-row"><span class="acard-label">📧 Email</span><span class="acard-val">ai.vub21@gmail.com</span></div>
+            <div class="acard-row"><span class="acard-label">📞 Phone</span><span class="acard-val">(940) 629-8885</span></div>
+          </div>
+        </div>
+
+        <div class="glass acard reveal reveal-delay-1">
+          <h3>Certifications</h3>
+          <div class="cert">
+            <div class="cert-icon">AWS</div>
+            AWS Certified AI Cloud Practitioner
+          </div>
+          <div class="cert">
+            <div class="cert-icon" style="font-size:.9rem;">🐋</div>
+            Docker Professional Certificate
+          </div>
+        </div>
+
+        <div class="glass acard reveal reveal-delay-2">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="edu-school">University of North Texas</div>
+            <div class="edu-degree">M.S. Computer Science</div>
+            <div class="edu-dates">Aug 2023 – Dec 2024</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-school">Sphoorthy Engineering College</div>
+            <div class="edu-degree">B.Tech Computer Science</div>
+            <div class="edu-dates">2018 – 2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">Experience</div>
+      <h2 class="sh-title">Where I've <span class="gt">Made an Impact</span></h2>
+      <p class="sh-desc">From trading platforms at scale to AI-powered banking — building things that actually matter.</p>
+    </div>
+
+    <div class="exp__timeline">
+
+      <!-- Centific -->
+      <div class="exp__item reveal">
+        <div class="exp__dot exp__dot--now"></div>
+        <div class="gcard exp__card">
+          <div style="padding:0">
+            <div class="exp__head">
+              <h3 class="exp__role">Applied AI Engineer</h3>
+              <span class="exp__date">Feb 2024 — Present</span>
+            </div>
+            <div class="exp__meta">
+              <span class="exp__co">Centific (Client: Citizens Bank)</span>
+              <span class="badge badge--green">Current</span>
+              <span class="exp__loc">🌐 Remote, USA</span>
+            </div>
+            <ul class="exp__bullets">
+              <li class="exp__bullet">Architected scalable data ingestion pipelines using <strong>Python, SQLAlchemy, and AWS Glue</strong>, processing millions of customer interaction logs in PostgreSQL with full data lineage for SOC 2 and PCI DSS compliance.</li>
+              <li class="exp__bullet">Engineered behavioral features (intent classification, sentiment scoring, transaction pattern analysis) using <strong>pandas and spaCy</strong>, improving downstream model signal quality by <strong>27%</strong>.</li>
+              <li class="exp__bullet">Fine-tuned <strong>BERT and RoBERTa</strong> on AWS SageMaker for intent detection and personalized financial recommendations, boosting model accuracy from <strong>0.78 → 0.90</strong> through domain-specific tuning.</li>
+              <li class="exp__bullet">Applied <strong>LoRA and PEFT</strong> via Hugging Face Accelerate on AWS EC2, enabling efficient fine-tuning on proprietary banking datasets under strict data privacy and governance standards.</li>
+              <li class="exp__bullet">Ran <strong>100+ hyperparameter experiments</strong> with Optuna (Bayesian search, k-fold CV), tracking all results in MLflow with GitLab CI/CD for reproducible, automated model deployment.</li>
+              <li class="exp__bullet">Deployed real-time conversational AI pipelines using <strong>LangChain, FAISS, and AWS Lambda</strong>, powering intelligent banking chatbots with a <strong>22% increase</strong> in customer satisfaction scores.</li>
+              <li class="exp__bullet">Built interactive analytics dashboards using <strong>Streamlit and Plotly</strong> on AWS Elastic Beanstalk for real-time visualization of chatbot engagement metrics.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNT TA -->
+      <div class="exp__item reveal">
+        <div class="exp__dot"></div>
+        <div class="gcard exp__card">
+          <div style="padding:0">
+            <div class="exp__head">
+              <h3 class="exp__role">Graduate Teaching Assistant – Software Engineering</h3>
+              <span class="exp__date">Aug 2023 — Dec 2023</span>
+            </div>
+            <div class="exp__meta">
+              <span class="exp__co">University of North Texas</span>
+              <span class="exp__loc">📍 Denton, TX</span>
+            </div>
+            <ul class="exp__bullets">
+              <li class="exp__bullet">Supported a graduate-level Software Engineering course — SDLC, system design, version control, testing strategies, and design patterns — for <strong>30+ students</strong>.</li>
+              <li class="exp__bullet">Evaluated coding projects and exams; delivered detailed feedback on code quality, documentation standards, and architecture decisions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EPAM -->
+      <div class="exp__item reveal">
+        <div class="exp__dot"></div>
+        <div class="gcard exp__card">
+          <div style="padding:0">
+            <div class="exp__head">
+              <h3 class="exp__role">Full Stack Developer</h3>
+              <span class="exp__date">Feb 2022 — Jun 2023</span>
+            </div>
+            <div class="exp__meta">
+              <span class="exp__co">EPAM Systems</span>
+              <span class="exp__loc">🌐 Remote</span>
+            </div>
+            <ul class="exp__bullets">
+              <li class="exp__bullet">Built high-performance frontend components in <strong>React, TypeScript, and Redux</strong> with real-time trade dashboards via WebSockets, improving trader productivity by <strong>23%</strong>.</li>
+              <li class="exp__bullet">Designed <strong>Spring Boot microservices</strong> for trade validation, routing, and compliance checks; integrated Kafka event streams and FIX protocol adapters, reducing API latency by <strong>27%</strong>.</li>
+              <li class="exp__bullet">Optimized PostgreSQL schemas, indexing, and query plans for a Trade Order Management System processing millions of trades monthly — query performance improved by <strong>31%</strong>.</li>
+              <li class="exp__bullet">Deployed containerized services on <strong>AWS ECS Fargate</strong> with autoscaling and AWS KMS, maintaining <strong>99.99% uptime</strong> while cutting infrastructure costs by <strong>18%</strong>.</li>
+              <li class="exp__bullet">Built automated test pipelines using <strong>JUnit, Selenium, and GitHub Actions</strong>, raising test coverage to <strong>92%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────────────────────────── -->
+<section id="skills" class="section section--alt">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">Skills</div>
+      <h2 class="sh-title">Technical <span class="gt">Arsenal</span></h2>
+      <p class="sh-desc">A broad and deep stack spanning AI/ML research, cloud infrastructure, data engineering, and full-stack development.</p>
+    </div>
+
+    <div class="skills__grid">
+      <div class="glass skcat reveal">
+        <div class="skcat__head"><div class="skcat__icon ic-p">🧠</div><span class="skcat__name">LLMs &amp; NLP</span></div>
+        <div class="skcat__chips">
+          <span class="chip">BERT</span><span class="chip">RoBERTa</span><span class="chip">LoRA</span><span class="chip">PEFT</span>
+          <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">FAISS</span><span class="chip">ChromaDB</span>
+          <span class="chip">BM25</span><span class="chip">RAG</span><span class="chip">NER</span><span class="chip">Intent Classification</span>
+          <span class="chip">Sentiment Analysis</span><span class="chip">Hugging Face</span><span class="chip">SentenceTransformers</span><span class="chip">spaCy</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-1">
+        <div class="skcat__head"><div class="skcat__icon ic-b">⚙️</div><span class="skcat__name">ML &amp; Deep Learning</span></div>
+        <div class="skcat__chips">
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span>
+          <span class="chip">XGBoost</span><span class="chip">LightGBM</span><span class="chip">CNNs</span>
+          <span class="chip">LSTMs</span><span class="chip">GANs</span><span class="chip">Optuna</span>
+          <span class="chip">Bayesian Optimization</span><span class="chip">MLflow</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-2">
+        <div class="skcat__head"><div class="skcat__icon ic-c">☁️</div><span class="skcat__name">Cloud &amp; MLOps</span></div>
+        <div class="skcat__chips">
+          <span class="chip">AWS SageMaker</span><span class="chip">AWS Lambda</span><span class="chip">AWS EC2</span>
+          <span class="chip">ECS Fargate</span><span class="chip">AWS Glue</span><span class="chip">AWS RDS</span>
+          <span class="chip">AWS KMS</span><span class="chip">Elastic Beanstalk</span><span class="chip">Azure ML</span>
+          <span class="chip">GCP AI Platform</span><span class="chip">Docker</span><span class="chip">Kubernetes</span>
+          <span class="chip">GitLab CI/CD</span><span class="chip">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal">
+        <div class="skcat__head"><div class="skcat__icon ic-a">🔧</div><span class="skcat__name">Data Engineering</span></div>
+        <div class="skcat__chips">
+          <span class="chip">Apache Kafka</span><span class="chip">Debezium</span><span class="chip">PySpark</span>
+          <span class="chip">Apache Airflow</span><span class="chip">Azure Data Factory</span><span class="chip">PostgreSQL</span>
+          <span class="chip">SQLAlchemy</span><span class="chip">pandas</span><span class="chip">NumPy</span>
+          <span class="chip">BeautifulSoup</span><span class="chip">httpx</span><span class="chip">Pydantic</span>
+          <span class="chip">REST APIs</span><span class="chip">Web Scraping</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-1">
+        <div class="skcat__head"><div class="skcat__icon ic-g">🖥️</div><span class="skcat__name">Backend &amp; Frameworks</span></div>
+        <div class="skcat__chips">
+          <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Django</span>
+          <span class="chip">FastAPI</span><span class="chip">Spring Boot</span><span class="chip">Node.js</span>
+          <span class="chip">Supabase</span><span class="chip">Gunicorn</span><span class="chip">Microservices</span><span class="chip">FIX Protocol</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-2">
+        <div class="skcat__head"><div class="skcat__icon ic-pk">🎨</div><span class="skcat__name">Frontend &amp; Visualization</span></div>
+        <div class="skcat__chips">
+          <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Redux</span>
+          <span class="chip">WebSockets</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span>
+          <span class="chip">Bootstrap</span><span class="chip">Vite</span><span class="chip">Streamlit</span>
+          <span class="chip">Plotly</span><span class="chip">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal">
+        <div class="skcat__head"><div class="skcat__icon ic-r">🗄️</div><span class="skcat__name">Databases &amp; Caching</span></div>
+        <div class="skcat__chips">
+          <span class="chip">PostgreSQL</span><span class="chip">Redis</span>
+          <span class="chip">Pinecone</span><span class="chip">ChromaDB</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-1">
+        <div class="skcat__head"><div class="skcat__icon ic-b">📊</div><span class="skcat__name">Monitoring &amp; XAI</span></div>
+        <div class="skcat__chips">
+          <span class="chip">SHAP</span><span class="chip">LIME</span><span class="chip">Evidently</span>
+          <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">CloudWatch</span>
+        </div>
+      </div>
+
+      <div class="glass skcat reveal reveal-delay-2">
+        <div class="skcat__head"><div class="skcat__icon ic-a">🛡️</div><span class="skcat__name">Compliance &amp; Security</span></div>
+        <div class="skcat__chips">
+          <span class="chip">SOC 2</span><span class="chip">PCI DSS</span><span class="chip">Data Lineage</span>
+          <span class="chip">AWS KMS</span><span class="chip">Data Privacy</span><span class="chip">Governance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ───────────────────────────────────────────── -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">Projects</div>
+      <h2 class="sh-title">Things I've <span class="gt">Built</span></h2>
+      <p class="sh-desc">Production-grade AI systems and full-stack applications solving real-world problems.</p>
+    </div>
+
+    <div class="proj__grid">
+
+      <!-- B0Bot – Featured -->
+      <div class="proj__featured reveal">
+        <div class="gcard pcard">
+          <div class="pcard__content">
+            <div class="pcard__top">
+              <div class="pcard__icon" style="background:rgba(139,92,246,.15);">🛡️</div>
+              <div class="pcard__links">
+                <a href="https://github.com/vub21" target="_blank" rel="noopener" class="plink" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <span class="badge badge--green">Open Source</span>
+              </div>
+            </div>
+            <div class="pcard__sub">Cybersecurity Intelligence Platform</div>
+            <h3 class="pcard__title">B0Bot</h3>
+            <p class="pcard__desc">
+              A production-grade cybersecurity intelligence platform aggregating threat data across
+              10 categories (malware, CVEs, data breaches, cyberattacks) from 15+ sources including
+              The Hacker News, CISA, Palo Alto Unit 42, and GitHub Security Advisories.
+            </p>
+            <div class="pcard__hl">
+              <div class="pcard__bullet">CDC pipeline with Apache Kafka + Debezium connectors — deduplicates by URL, embeds via SentenceTransformer, upserts to Pinecone.</div>
+              <div class="pcard__bullet">Multi-layer ingestion: web scraping (BeautifulSoup + httpx), 7 RSS feeds, YouTube API, NewsAPI, Reddit/PRAW, HackerNews, Mastodon, GitHub Advisories.</div>
+              <div class="pcard__bullet">Agentic framework via LangChain/LangGraph — four specialized agents (Scraper, Analyzer, Responder, Notification) with planner-executor coordination.</div>
+              <div class="pcard__bullet">Redis caching, multi-turn HuggingFace dialogue, and daily/weekly email digest subscription system.</div>
+            </div>
+          </div>
+          <div>
+            <div class="pcard__tags" style="margin-bottom:1.5rem">
+              <span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">Apache Kafka</span>
+              <span class="ptag">Debezium</span><span class="ptag">Redis</span><span class="ptag">Pinecone</span>
+              <span class="ptag">LangChain</span><span class="ptag">LangGraph</span><span class="ptag">HuggingFace</span>
+              <span class="ptag">SentenceTransformers</span><span class="ptag">BeautifulSoup</span><span class="ptag">PRAW</span>
+            </div>
+            <!-- Mini metrics -->
+            <div style="display:flex;flex-direction:column;gap:.875rem">
+              <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.125rem">
+                <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:.75rem">Platform Metrics</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:.875rem">
+                  <div><div style="font-family:var(--font-display);font-size:1.375rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">15+</div><div style="font-size:.72rem;color:var(--t3);font-weight:600">Data Sources</div></div>
+                  <div><div style="font-family:var(--font-display);font-size:1.375rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">10</div><div style="font-size:.72rem;color:var(--t3);font-weight:600">Threat Categories</div></div>
+                  <div><div style="font-family:var(--font-display);font-size:1.375rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">4</div><div style="font-size:.72rem;color:var(--t3);font-weight:600">Specialized Agents</div></div>
+                  <div><div style="font-family:var(--font-display);font-size:1.375rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">7</div><div style="font-size:.72rem;color:var(--t3);font-weight:600">RSS Feeds</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DriveAssist AI -->
+      <div class="reveal">
+        <div class="gcard pcard">
+          <div class="pcard__top">
+            <div class="pcard__icon" style="background:rgba(6,182,212,.12);">🚗</div>
+            <div class="pcard__links">
+              <a href="https://github.com/vub21" target="_blank" rel="noopener" class="plink">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <span class="badge badge--cyan">2026</span>
+            </div>
+          </div>
+          <div class="pcard__sub">RAG Knowledge Assistant</div>
+          <h3 class="pcard__title">DriveAssist AI</h3>
+          <p class="pcard__desc">A RAG-based driving knowledge assistant using a hybrid retrieval pipeline combining ChromaDB vector store, BM25 sparse retrieval, and FAISS ANN search — improving answer relevance over single-method baselines.</p>
+          <div class="pcard__hl">
+            <div class="pcard__bullet">Hybrid retrieval: ChromaDB + BM25 + FAISS for superior answer relevance over single-method approaches.</div>
+            <div class="pcard__bullet">Document chunking, embedding generation, multi-step query chaining via LangChain from vehicle owner's manuals.</div>
+            <div class="pcard__bullet">Serverless API on AWS Lambda — scalable, low-latency inference with zero idle infrastructure cost.</div>
+          </div>
+          <div class="pcard__tags">
+            <span class="ptag">Python</span><span class="ptag">LangChain</span><span class="ptag">FAISS</span>
+            <span class="ptag">ChromaDB</span><span class="ptag">BM25</span><span class="ptag">AWS Lambda</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AssistMap -->
+      <div class="reveal reveal-delay-1">
+        <div class="gcard pcard">
+          <div class="pcard__top">
+            <div class="pcard__icon" style="background:rgba(16,185,129,.12);">♿</div>
+            <div class="pcard__links">
+              <a href="https://github.com/vub21" target="_blank" rel="noopener" class="plink">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <span class="badge badge--green">2024</span>
+            </div>
+          </div>
+          <div class="pcard__sub">Accessibility Web Application</div>
+          <h3 class="pcard__title">AssistMap</h3>
+          <p class="pcard__desc">Full-stack accessibility web app enabling specially-challenged users to locate public restrooms via real-time geolocation search, distance calculation, and rating-based sorting.</p>
+          <div class="pcard__hl">
+            <div class="pcard__bullet">Secure user management with custom profiles, email-verified registration, and AWS SES password reset.</div>
+            <div class="pcard__bullet">Accessibility-focused blog module with interactive maps and photo galleries, served across desktop and mobile.</div>
+            <div class="pcard__bullet">Deployed on AWS EC2 with RDS (PostgreSQL), Gunicorn, and WhiteNoise for production-grade static file handling.</div>
+          </div>
+          <div class="pcard__tags">
+            <span class="ptag">Django</span><span class="ptag">PostgreSQL</span><span class="ptag">AWS EC2</span>
+            <span class="ptag">AWS RDS</span><span class="ptag">AWS SES</span><span class="ptag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section id="contact" class="section section--alt">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">Contact</div>
+      <h2 class="sh-title">Let's <span class="gt">Work Together</span></h2>
+      <p class="sh-desc">Open to full-time AI/ML roles, consulting, and interesting collaborations. Let's build something meaningful.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="reveal">
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;margin-bottom:.75rem">Get in Touch</h3>
+        <p style="font-size:.9375rem;color:var(--t2);line-height:1.8;margin-bottom:2rem">Whether you're looking to hire an AI engineer, collaborate on a project, or just want to talk tech — my inbox is always open.</p>
+
+        <div class="contact__methods">
+          <a href="mailto:ai.vub21@gmail.com" class="cmethod">
+            <div class="cmethod-icon ic-p"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="cmethod-text"><strong>Email</strong><span>ai.vub21@gmail.com</span></div>
+          </a>
+          <a href="tel:9406298885" class="cmethod">
+            <div class="cmethod-icon ic-b"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6 6l.95-1.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="cmethod-text"><strong>Phone</strong><span>(940) 629-8885</span></div>
+          </a>
+          <a href="https://linkedin.com/in/vub21" target="_blank" rel="noopener" class="cmethod">
+            <div class="cmethod-icon ic-c"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+            <div class="cmethod-text"><strong>LinkedIn</strong><span>linkedin.com/in/vub21</span></div>
+          </a>
+          <a href="https://github.com/vub21" target="_blank" rel="noopener" class="cmethod">
+            <div class="cmethod-icon" style="background:rgba(255,255,255,.06);"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+            <div class="cmethod-text"><strong>GitHub</strong><span>github.com/vub21</span></div>
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href="https://linkedin.com/in/vub21" target="_blank" rel="noopener" class="social" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://github.com/vub21"       target="_blank" rel="noopener" class="social" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="mailto:ai.vub21@gmail.com"       class="social" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          <a href="assets/resume/UdayBhaskar_Resume.pdf" download class="social" aria-label="Resume"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+        </div>
+      </div>
+
+      <div class="glass cform reveal reveal-delay-2">
+        <h3>Send a Message</h3>
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="frow">
+            <div class="fg"><label class="flabel" for="name">Name</label><input class="finput" type="text" id="name" name="name" placeholder="Jane Smith" required /></div>
+            <div class="fg"><label class="flabel" for="email">Email</label><input class="finput" type="email" id="email" name="email" placeholder="jane@company.com" required /></div>
+          </div>
+          <div class="fg"><label class="flabel" for="subject">Subject</label><input class="finput" type="text" id="subject" name="subject" placeholder="AI Engineer role at Acme Corp" required /></div>
+          <div class="fg"><label class="flabel" for="message">Message</label><textarea class="ftxt" id="message" name="message" placeholder="Tell me about the role, project, or idea..." required></textarea></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <p class="fnote"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Private — only used to respond to your message.</p>
+          <div class="cstatus" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">UBV</div>
+      <p class="footer__copy">© <span data-year></span> Uday Bhaskar Valapadasu · Built with purpose, deployed with precision.</p>
+      <nav class="footer__links">
+        <a href="#home" class="footer__link">Home</a>
+        <a href="#about" class="footer__link">About</a>
+        <a href="#projects" class="footer__link">Projects</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="b2t" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
