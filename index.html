@@ -29,6 +29,7 @@
         <li><a href="#experience" class="nav__link">Experience</a></li>
         <li><a href="#skills"     class="nav__link">Skills</a></li>
         <li><a href="#projects"   class="nav__link">Projects</a></li>
+        <li><a href="#academic"   class="nav__link">Academic</a></li>
         <li><a href="#contact"    class="nav__link">Contact</a></li>
       </ul>
       <div class="nav__actions">
@@ -54,6 +55,7 @@
   <a href="#experience" class="nav__link">Experience</a>
   <a href="#skills"     class="nav__link">Skills</a>
   <a href="#projects"   class="nav__link">Projects</a>
+  <a href="#academic"   class="nav__link">Academic</a>
   <a href="#contact"    class="nav__link">Contact</a>
   <div class="nav__mobile-resume">
     <a href="assets/resume/UdayBhaskar_Resume.pdf" download class="btn btn--primary" style="width:100%;justify-content:center;">
@@ -66,6 +68,7 @@
 <!-- ── HERO ──────────────────────────────────────────────── -->
 <section id="home" class="hero">
   <!-- Background elements -->
+  <canvas id="particle-canvas"></canvas>
   <div class="hero-bg">
     <div class="hero-bg__orb hero-bg__orb--1"></div>
     <div class="hero-bg__orb hero-bg__orb--2"></div>
@@ -112,7 +115,7 @@
         </div>
 
         <div class="hero__stats reveal">
-          <div><div class="hero__stat-val">2+</div><div class="hero__stat-lbl">Years AI/ML</div></div>
+          <div><div class="hero__stat-val">4+</div><div class="hero__stat-lbl">Years AI/ML</div></div>
           <div><div class="hero__stat-val">0.90</div><div class="hero__stat-lbl">Model Accuracy</div></div>
           <div><div class="hero__stat-val">22%</div><div class="hero__stat-lbl">CSAT Uplift</div></div>
           <div><div class="hero__stat-val">100+</div><div class="hero__stat-lbl">HPO Experiments</div></div>
@@ -226,8 +229,9 @@
           via LangChain + AWS Lambda that drove a <strong>22% uplift in customer satisfaction</strong>.
         </p>
         <p class="about__p reveal">
-          Before AI, I built high-performance trading platforms at EPAM Systems using React, Spring Boot,
-          and Kafka — giving me rare full-stack depth to pair with ML expertise.
+          Before joining Centific, I engineered the <strong>Customer Support Intelligence System</strong>
+          at EPAM Systems for Dell Technologies — an ML pipeline automating ticket categorization,
+          sentiment analysis, and urgency prediction using BERT, XGBoost, and Azure ML.
           I hold an <strong>MSCS from the University of North Texas (Dec 2024)</strong>.
         </p>
 
@@ -274,6 +278,14 @@
           <div class="cert">
             <div class="cert-icon">AWS</div>
             AWS Certified AI Cloud Practitioner
+          </div>
+          <div class="cert">
+            <div class="cert-icon">AWS</div>
+            AWS Certified Developer – Associate
+          </div>
+          <div class="cert">
+            <div class="cert-icon" style="font-size:.9rem;">🎓</div>
+            Google AI Professional Certification
           </div>
           <div class="cert">
             <div class="cert-icon" style="font-size:.9rem;">🐋</div>
@@ -364,19 +376,19 @@
         <div class="gcard exp__card">
           <div style="padding:0">
             <div class="exp__head">
-              <h3 class="exp__role">Full Stack Developer</h3>
+              <h3 class="exp__role">AI/ML Engineer</h3>
               <span class="exp__date">Feb 2022 — Jun 2023</span>
             </div>
             <div class="exp__meta">
-              <span class="exp__co">EPAM Systems</span>
-              <span class="exp__loc">🌐 Remote</span>
+              <span class="exp__co">EPAM Systems (Client: Dell Technologies)</span>
+              <span class="exp__loc">📍 Hyderabad, India</span>
             </div>
             <ul class="exp__bullets">
-              <li class="exp__bullet">Built high-performance frontend components in <strong>React, TypeScript, and Redux</strong> with real-time trade dashboards via WebSockets, improving trader productivity by <strong>23%</strong>.</li>
-              <li class="exp__bullet">Designed <strong>Spring Boot microservices</strong> for trade validation, routing, and compliance checks; integrated Kafka event streams and FIX protocol adapters, reducing API latency by <strong>27%</strong>.</li>
-              <li class="exp__bullet">Optimized PostgreSQL schemas, indexing, and query plans for a Trade Order Management System processing millions of trades monthly — query performance improved by <strong>31%</strong>.</li>
-              <li class="exp__bullet">Deployed containerized services on <strong>AWS ECS Fargate</strong> with autoscaling and AWS KMS, maintaining <strong>99.99% uptime</strong> while cutting infrastructure costs by <strong>18%</strong>.</li>
-              <li class="exp__bullet">Built automated test pipelines using <strong>JUnit, Selenium, and GitHub Actions</strong>, raising test coverage to <strong>92%</strong>.</li>
+              <li class="exp__bullet">Led development of the <strong>Customer Support Intelligence System</strong> — an ML-powered solution automating ticket categorization, sentiment analysis, and response prioritization, reducing average response time by <strong>20%</strong> and ticket backlog by <strong>15%</strong>.</li>
+              <li class="exp__bullet">Built ETL pipelines processing support tickets, chat logs, and product usage feedback using <strong>Python, PySpark, and Azure Data Factory</strong>, producing clean labeled datasets across 3 Dell product lines.</li>
+              <li class="exp__bullet">Developed and deployed <strong>NLP classification models</strong> (scikit-learn, XGBoost, BERT) to auto-categorize tickets and predict urgency from sentiment, achieving <strong>F1-score of 0.87</strong> for ticket classification and <strong>90% accuracy</strong> in sentiment detection.</li>
+              <li class="exp__bullet">Applied <strong>Grid Search and SHAP explainability</strong> to tune hyperparameters and ensure transparent, interpretable predictions — a key requirement for Dell's support compliance and QA review process.</li>
+              <li class="exp__bullet">Deployed models via <strong>Azure ML</strong> with Docker and Kubernetes, integrating real-time scoring REST APIs into Dell's ticket platform; configured <strong>Apache Airflow</strong> for monthly model retraining with Prometheus/Grafana performance tracking.</li>
             </ul>
           </div>
         </div>
@@ -443,17 +455,19 @@
         <div class="skcat__chips">
           <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Django</span>
           <span class="chip">FastAPI</span><span class="chip">Spring Boot</span><span class="chip">Node.js</span>
-          <span class="chip">Supabase</span><span class="chip">Gunicorn</span><span class="chip">Microservices</span><span class="chip">FIX Protocol</span>
+          <span class="chip">Supabase</span><span class="chip">Gunicorn</span><span class="chip">Microservices</span>
+          <span class="chip">OCR (Mindee · Google Vision)</span><span class="chip">Pydantic</span>
         </div>
       </div>
 
       <div class="glass skcat reveal reveal-delay-2">
         <div class="skcat__head"><div class="skcat__icon ic-pk">🎨</div><span class="skcat__name">Frontend &amp; Visualization</span></div>
         <div class="skcat__chips">
-          <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Redux</span>
-          <span class="chip">WebSockets</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span>
-          <span class="chip">Bootstrap</span><span class="chip">Vite</span><span class="chip">Streamlit</span>
-          <span class="chip">Plotly</span><span class="chip">Matplotlib</span>
+          <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Next.js</span>
+          <span class="chip">Redux</span><span class="chip">WebSockets</span><span class="chip">JavaScript</span>
+          <span class="chip">HTML/CSS</span><span class="chip">Bootstrap</span><span class="chip">Vite</span>
+          <span class="chip">Streamlit</span><span class="chip">Plotly</span><span class="chip">Matplotlib</span>
+          <span class="chip">Figma</span>
         </div>
       </div>
 
@@ -600,6 +614,34 @@
         </div>
       </div>
 
+      <!-- ResumeAI -->
+      <div class="reveal">
+        <div class="gcard pcard">
+          <div class="pcard__top">
+            <div class="pcard__icon" style="background:rgba(139,92,246,.15);">📄</div>
+            <div class="pcard__links">
+              <a href="https://github.com/vub21" target="_blank" rel="noopener" class="plink">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <span class="badge badge--purple">2025</span>
+            </div>
+          </div>
+          <div class="pcard__sub">Full-Stack AI SaaS Platform</div>
+          <h3 class="pcard__title">ResumeAI</h3>
+          <p class="pcard__desc">AI-powered resume optimization platform where users upload PDF/DOCX resumes, input a job description, and receive ATS-aligned bullet-level rewrite suggestions via Claude/OpenAI APIs with real-time streaming progress.</p>
+          <div class="pcard__hl">
+            <div class="pcard__bullet">Accept/reject/edit review workflow with tailored PDF/DOCX export and AI-generated cover letters.</div>
+            <div class="pcard__bullet">Resume history tracking with Redis session caching and Supabase persistent user data.</div>
+            <div class="pcard__bullet">Real-time streaming via Claude API and OpenAI API for live rewrite suggestions.</div>
+          </div>
+          <div class="pcard__tags">
+            <span class="ptag">React</span><span class="ptag">TypeScript</span><span class="ptag">FastAPI</span>
+            <span class="ptag">Claude API</span><span class="ptag">OpenAI API</span>
+            <span class="ptag">Supabase</span><span class="ptag">Redis</span><span class="ptag">Python</span>
+          </div>
+        </div>
+      </div>
+
       <!-- AssistMap -->
       <div class="reveal reveal-delay-1">
         <div class="gcard pcard">
@@ -624,6 +666,66 @@
             <span class="ptag">Django</span><span class="ptag">PostgreSQL</span><span class="ptag">AWS EC2</span>
             <span class="ptag">AWS RDS</span><span class="ptag">AWS SES</span><span class="ptag">Bootstrap</span>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ACADEMIC PROJECTS ───────────────────────────────────── -->
+<section id="academic" class="section section--alt">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="sh-label">Academic Projects</div>
+      <h2 class="sh-title">Research &amp; <span class="gt">ML Studies</span></h2>
+      <p class="sh-desc">Graduate coursework projects applying classical and modern ML methods to real-world datasets.</p>
+    </div>
+
+    <div class="acad__grid">
+
+      <div class="glass acad__card reveal">
+        <div class="acad__header">
+          <div class="acad__icon ic-b">🌧️</div>
+          <div>
+            <div class="acad__date">May – Jul 2024</div>
+            <h3 class="acad__title">Predicting Rainfall in Australia</h3>
+          </div>
+        </div>
+        <p class="acad__desc">Developed and benchmarked 6 classifiers (Decision Trees, SVM, Naïve Bayes, KNN, XGBoost, Random Forest) on a multi-station Australian weather dataset for next-day rainfall prediction.</p>
+        <div class="acad__tags">
+          <span class="ptag">scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">pandas</span>
+          <span class="ptag">matplotlib</span><span class="ptag">EDA</span>
+        </div>
+      </div>
+
+      <div class="glass acad__card reveal reveal-delay-1">
+        <div class="acad__header">
+          <div class="acad__icon ic-a">🎬</div>
+          <div>
+            <div class="acad__date">Jan – May 2024</div>
+            <h3 class="acad__title">Predictors of Movie Box Office Success</h3>
+          </div>
+        </div>
+        <p class="acad__desc">Analyzed revenue drivers across 5,000+ films using Multiple Linear Regression, Random Forests, and Gradient Boosting; identified budget and social media metrics as dominant success predictors.</p>
+        <div class="acad__tags">
+          <span class="ptag">Random Forest</span><span class="ptag">Gradient Boosting</span>
+          <span class="ptag">pandas</span><span class="ptag">NumPy</span><span class="ptag">scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="glass acad__card reveal reveal-delay-2">
+        <div class="acad__header">
+          <div class="acad__icon ic-c">🚕</div>
+          <div>
+            <div class="acad__date">Sep 2023</div>
+            <h3 class="acad__title">Weather Impact on Uber/Lyft Ride Demand</h3>
+          </div>
+        </div>
+        <p class="acad__desc">Applied KNN, Logistic Regression, and SVM to Boston ride-share + weather datasets, achieving 87% predictive accuracy; surfaced patterns between weather conditions and ride-type preferences for dynamic pricing.</p>
+        <div class="acad__tags">
+          <span class="ptag">KNN</span><span class="ptag">SVM</span><span class="ptag">Logistic Regression</span>
+          <span class="ptag">scikit-learn</span><span class="ptag">Feature Engineering</span>
         </div>
       </div>
 

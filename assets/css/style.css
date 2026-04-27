@@ -717,6 +717,179 @@ input,textarea{font-family:inherit}
 .ic-pk{background:rgba(236,72,153,.1);color:var(--pk)}
 .ic-r{background:rgba(239,68,68,.1);color:var(--r)}
 
+/* ─── ACADEMIC PROJECTS ───────────────────────────────────── */
+.acad__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.acad__card{
+  padding:1.75rem;border-radius:var(--r-xl);
+  transition:all var(--t-base);
+  position:relative;overflow:hidden;
+}
+.acad__card::before{
+  content:'';position:absolute;inset:0;
+  background:var(--grad-card);pointer-events:none;z-index:0;
+}
+.acad__card>*{position:relative;z-index:1}
+.acad__card:hover{transform:translateY(-4px);border-color:var(--border-h);box-shadow:var(--glow-sm),var(--sh-md)}
+.acad__header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+.acad__icon{
+  width:2.75rem;height:2.75rem;border-radius:var(--r-md);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.25rem;flex-shrink:0;
+}
+.acad__date{font-family:var(--font-mono);font-size:.68rem;color:var(--t3);font-weight:600;margin-bottom:.25rem}
+.acad__title{font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--t1);line-height:1.3}
+.acad__desc{font-size:.85rem;color:var(--t2);line-height:1.75;margin-bottom:1rem}
+.acad__tags{display:flex;flex-wrap:wrap;gap:.35rem}
+
+/* ─── FUTURISTIC: PARTICLE CANVAS ────────────────────────── */
+#particle-canvas{
+  position:absolute;inset:0;z-index:0;pointer-events:none;
+  width:100%;height:100%;
+  opacity:.55;
+}
+[data-theme="light"] #particle-canvas{opacity:.25}
+
+/* ─── FUTURISTIC: SCANLINE OVERLAY ───────────────────────── */
+.hero::after{
+  content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:repeating-linear-gradient(
+    0deg,
+    transparent,transparent 2px,
+    rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px
+  );
+}
+
+/* ─── FUTURISTIC: HOLOGRAPHIC SHIMMER ON CARDS ───────────── */
+.gcard,.glass{
+  --shimmer-x:50%;--shimmer-y:50%;
+}
+.gcard:hover,.glass:hover{
+  background-image:radial-gradient(
+    circle at var(--shimmer-x) var(--shimmer-y),
+    rgba(139,92,246,.07) 0%,transparent 60%
+  );
+}
+
+/* ─── FUTURISTIC: GLITCH HERO NAME ───────────────────────── */
+.hero__name{position:relative}
+.hero__name-grad{
+  position:relative;
+  animation:glitch-idle 8s ease-in-out infinite;
+}
+@keyframes glitch-idle{
+  0%,90%,100%{clip-path:none;transform:none}
+  91%{clip-path:polygon(0 10%,100% 10%,100% 35%,0 35%);transform:translate(-2px,0)}
+  92%{clip-path:polygon(0 50%,100% 50%,100% 75%,0 75%);transform:translate(2px,0)}
+  93%{clip-path:none;transform:none}
+}
+
+/* ─── FUTURISTIC: NEON GLOW ON SECTION LABELS ────────────── */
+.sh-label{
+  box-shadow:0 0 20px rgba(139,92,246,.15);
+  animation:label-pulse 3s ease-in-out infinite alternate;
+}
+@keyframes label-pulse{
+  from{box-shadow:0 0 12px rgba(139,92,246,.1)}
+  to{box-shadow:0 0 28px rgba(139,92,246,.3),0 0 50px rgba(139,92,246,.1)}
+}
+
+/* ─── FUTURISTIC: ANIMATED GRADIENT BORDER ON HERO CARDS ─── */
+.hero__vis-card{
+  background:linear-gradient(var(--bg2),var(--bg2)) padding-box,
+             linear-gradient(135deg,rgba(139,92,246,.5),rgba(59,130,246,.3),rgba(6,182,212,.2)) border-box;
+  border:1px solid transparent;
+  animation:border-rotate 4s linear infinite;
+}
+@keyframes border-rotate{
+  0%{background:linear-gradient(var(--bg2),var(--bg2)) padding-box,linear-gradient(135deg,rgba(139,92,246,.5),rgba(59,130,246,.3),rgba(6,182,212,.2)) border-box}
+  50%{background:linear-gradient(var(--bg2),var(--bg2)) padding-box,linear-gradient(315deg,rgba(139,92,246,.5),rgba(59,130,246,.3),rgba(6,182,212,.2)) border-box}
+  100%{background:linear-gradient(var(--bg2),var(--bg2)) padding-box,linear-gradient(495deg,rgba(139,92,246,.5),rgba(59,130,246,.3),rgba(6,182,212,.2)) border-box}
+}
+
+/* ─── FUTURISTIC: ORB GLOW INTENSITY BOOST ───────────────── */
+.hero-bg__orb--1{
+  background:radial-gradient(circle,rgba(139,92,246,.3),transparent 70%);
+}
+.hero-bg__orb--2{
+  background:radial-gradient(circle,rgba(59,130,246,.22),transparent 70%);
+}
+.hero-bg__orb--3{
+  background:radial-gradient(circle,rgba(6,182,212,.18),transparent 70%);
+}
+
+/* ─── FUTURISTIC: HERO STATS GLOW ────────────────────────── */
+.hero__stat-val{
+  filter:drop-shadow(0 0 12px rgba(139,92,246,.4));
+}
+
+/* ─── FUTURISTIC: SKILL CHIP NEON HOVER ─────────────────── */
+.chip:hover{
+  box-shadow:0 0 12px rgba(139,92,246,.3);
+}
+
+/* ─── FUTURISTIC: TIMELINE LINE GLOW ────────────────────── */
+.exp__timeline::before{
+  box-shadow:0 0 8px rgba(139,92,246,.3);
+}
+
+/* ─── FUTURISTIC: TICKER NEON ITEM ──────────────────────── */
+.ticker__item:hover{
+  box-shadow:0 0 14px rgba(139,92,246,.25);
+}
+
+/* ─── FUTURISTIC: PROJECT CARD TOP ACCENT GLOW ──────────── */
+.pcard:hover::after{
+  box-shadow:0 0 20px rgba(139,92,246,.4);
+}
+
+/* ─── FUTURISTIC: AVAILABLE BADGE GLOW ──────────────────── */
+.hero__available{
+  box-shadow:0 0 20px rgba(16,185,129,.15);
+}
+
+/* ─── FUTURISTIC: NAV GLOW ON ACTIVE LINK ───────────────── */
+.nav__link.active{
+  box-shadow:0 0 16px rgba(139,92,246,.2);
+}
+
+/* ─── FUTURISTIC: BUTTON PRIMARY PULSE ──────────────────── */
+.btn--primary{
+  animation:btn-glow 3s ease-in-out infinite alternate;
+}
+@keyframes btn-glow{
+  from{box-shadow:0 4px 20px rgba(139,92,246,.4)}
+  to{box-shadow:0 4px 30px rgba(139,92,246,.65),0 0 60px rgba(139,92,246,.15)}
+}
+.btn--primary:hover{animation:none;box-shadow:0 8px 32px rgba(139,92,246,.7)}
+
+/* ─── FUTURISTIC: CORNER ACCENTS ON FEATURED CARD ───────── */
+.proj__featured .pcard{position:relative}
+.proj__featured .pcard::before{
+  border-color:rgba(139,92,246,.7) rgba(59,130,246,.4) rgba(6,182,212,.2);
+}
+
+/* ─── FUTURISTIC: HOLOGRAPHIC CERT ICON ─────────────────── */
+.cert-icon{
+  background:linear-gradient(135deg,#8b5cf6,#3b82f6,#06b6d4);
+  animation:cert-shimmer 3s ease-in-out infinite alternate;
+}
+@keyframes cert-shimmer{
+  from{background:linear-gradient(135deg,#8b5cf6,#3b82f6,#06b6d4)}
+  to{background:linear-gradient(135deg,#06b6d4,#8b5cf6,#3b82f6)}
+}
+
+/* ─── FUTURISTIC: SCROLL BAR GLOW ───────────────────────── */
+::-webkit-scrollbar-thumb{
+  box-shadow:0 0 6px var(--p);
+}
+
+/* ─── FUTURISTIC: FOCUS RING ─────────────────────────────── */
+*:focus-visible{
+  outline:2px solid var(--p2);
+  outline-offset:3px;
+  box-shadow:0 0 0 4px var(--p-dim);
+}
+
 /* ─── RESPONSIVE ──────────────────────────────────────────── */
 @media(max-width:1024px){
   .hero__inner{grid-template-columns:1fr;gap:3rem}
@@ -726,6 +899,7 @@ input,textarea{font-family:inherit}
   .acard{flex:1;min-width:220px}
   .contact__grid{grid-template-columns:1fr;gap:2.5rem}
   .proj__featured .pcard{display:flex;flex-direction:column}
+  .acad__grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
   :root{--header-h:3.5rem}
@@ -735,6 +909,7 @@ input,textarea{font-family:inherit}
   .hero__actions{flex-wrap:wrap}
   .skills__grid{grid-template-columns:1fr}
   .proj__grid{grid-template-columns:1fr}
+  .acad__grid{grid-template-columns:1fr}
   .frow{grid-template-columns:1fr}
   .footer__inner{flex-direction:column;text-align:center}
   .b2t{right:1.25rem;bottom:1.25rem}
